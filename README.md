@@ -5,6 +5,11 @@ Frida Kahlo Quiz is an app that gives quizers the ability to show off their know
 Check out the Application [Here](https://expatjournal.netlify.com/Quiz_Proj_1) 
 <!-- TODO: add deployed link above -->
 
+![Landing Page](images/LandingPage.png)
+![Quiz Page](images/Quiz.png)
+![Wining Page](images/win.png)
+
+
 
 ## Link to Product Canvas 
 [Product Canvas](https://docs.google.com/document/d/1MhmoJ3OM9fy1GUrUz33NOj95X-tXdq-q2yEAqStG6B8/edit?usp=sharing)
