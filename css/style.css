@@ -1,25 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-#quiz-container {
-    background: white;
-    width: 90%;
-    max-width: 500px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#instructions-container, 
+#quiz-container {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#instructions-container {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 h1, h2 {
@@ -40,6 +36,11 @@ button:hover {
     background: #0056b3;
 }
 
+button:focus {
+    outline: 2px solid #FFD700;
+}
+
+
 .hidden {
     display: none;
 }
@@ -53,4 +54,12 @@ button:hover {
 
 #options button {
     width: 100%;
+}
+
+.win-message {
+    color: green;
+}
+
+.lose-message {
+    color: red;
 }
