@@ -82,9 +82,20 @@ document.addEventListener("DOMContentLoaded", () => {
         if (selectedAnswer === quizData.answer) {
             score++;
         }
-
-        nextButton.classList.remove("hidden");
+    
+        setTimeout(() => {
+            nextQuestion();
+        }, 1000); // Adds a 1-second delay for better user experience
     }
+    
+    // function checkAnswer(selectedAnswer) {
+    //     const quizData = questions[currentCategory][currentQuestionIndex];
+    //     if (selectedAnswer === quizData.answer) {
+    //         score++;
+    //     }
+
+    //     nextButton.classList.remove("hidden");
+    // }
 
     function nextQuestion() {
         currentQuestionIndex++;
