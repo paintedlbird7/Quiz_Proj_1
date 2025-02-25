@@ -2,6 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #ffccdc;
+
 }
 
 #instructions-container, 
@@ -12,7 +14,8 @@ body {
 }
 
 #instructions-container {
-    background-color: #f8f9fa;
+    background: transparent;
+    background-color: #ccffed;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -23,7 +26,8 @@ h1, h2 {
 }
 
 button {
-    background: #007BFF;
+    background: #726f6f;
+    /* background: #007BFF; */
     color: white;
     border: none;
     padding: 10px;
@@ -37,7 +41,7 @@ button:hover {
 }
 
 button:focus {
-    outline: 2px solid #FFD700;
+    outline: 2px solid #ccffed;
 }
 
 
