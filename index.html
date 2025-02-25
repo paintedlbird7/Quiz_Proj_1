@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Quiz Game</h1>
+        <div id="category-selection">
+            <h2>Select a Category:</h2>
+            <button class="category-btn" onclick="startQuiz('js')">Frida Kahlo</button>
+            <button class="category-btn" onclick="startQuiz('html')">General</button>
+        </div>
+        <div id="quiz" class="hidden">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <button id="next-btn" class="hidden" onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="result" class="hidden"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
