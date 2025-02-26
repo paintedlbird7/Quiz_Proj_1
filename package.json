@@ -1,0 +1,19 @@
+{
+  "name": "quiz_proj_1",
+  "version": "1.0.0",
+  "description": "Frida Kahlo Quiz is an app that gives quizers the ability to show off their knowledge of Frida and see their scores.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jsdom": "^26.0.0"
+  }
+}
