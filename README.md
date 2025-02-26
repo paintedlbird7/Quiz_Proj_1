@@ -2,8 +2,7 @@
 
 Frida Kahlo Quiz is an app that gives quizers the ability to show off their knowledge of Frida and see their scores.
 
-Check out the Application [Here](https://expatjournal.netlify.com/Quiz_Proj_1) 
-<!-- TODO: add deployed link above -->
+Check out the Application [Here](https://paintedlbird7.github.io/Quiz_Proj_1/) 
 
 ![Landing Page](images/LandingPage.png)
 ![Quiz Page](images/Quiz.png)
@@ -36,24 +35,10 @@ Check out the Application [Here](https://expatjournal.netlify.com/Quiz_Proj_1)
 
 `git clone https://github.com/paintedlbird7/Quiz_Proj_1 && cd Quiz_Proj_1`
 
-### Install Dependencies
-
-`none`
-<!-- TODO: add dependencies if any -->
-
-
-#### Add Neccessary Environment Viariable
-
-- none
-<!-- TODO: add environmental viariables if any for example
-- yarn
-- styled components
-- react-router-dom-->
-
 
 ## Documentation 
 
-This application is deployed on [github](https://github.com/Quiz_Proj_1).
+This application is deployed on [Github Pages](https://paintedlbird7.github.io/Quiz_Proj_1/).
 
  ---
 ## Next Up
