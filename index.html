@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <link rel="icon" type="image/favicon-icon" href="images/favicon.ico">
-    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frida Kahlo Quiz App</title>
@@ -22,18 +21,30 @@
     <div id="quiz-container">
         <h1>Frida Kahlo Quiz Game</h1>
         <div id="category-selection">
-            </h3>
             <h2>Select a Category:</h2>
             <button class="category-btn" onclick="startQuiz('frida')">Frida Kahlo</button>
             <button class="category-btn" onclick="startQuiz('general')">General</button>
         </div>
+        
         <div id="quiz" class="hidden">
             <h2 id="question"></h2>
             <div id="options"></div>
             <button id="next-btn" class="hidden" onclick="nextQuestion()">Next</button>
+            
+            <!-- Image added at the bottom of the quiz -->
+            <img id="quiz-image" src="images/frida.png" alt="Quiz Illustration">
         </div>
+
         <div id="result" class="hidden"></div>
     </div>
+
     <script src="js/script.js"></script>
+    <footer>
+        <p>&copy; 2025 Rosa Perez | Painted Bird Designs  
+            <a href="https://github.com/paintedlbird7" target="_blank">GitHub</a> |  
+            <a href="https://www.rosapérez.com">Portfolio</a>
+        </p>
+    </footer>
+    
 </body>
 </html>
