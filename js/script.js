@@ -101,17 +101,17 @@ document.addEventListener("DOMContentLoaded", () => {
       showResult();
     }
   }
-
   function showResult() {
     quizContainer.classList.add("hidden");
 
     let resultMessage = "";
 
     if (score === questions[currentCategory].length) {
-      resultMessage = "<h2 class='win-message'>You Win! Perfect Score!</h2>";
-      audio.play();
+        resultMessage = "<h2 class='win-message'>You Win! Perfect Score!</h2>";
+        document.getElementById("congrats-audio").play(); // Play congrats audio
     } else {
-      resultMessage = `<h2 class='lose-message'>You Lost! Try Again.</h2>`;
+        resultMessage = `<h2 class='lose-message'>You Lost! Try Again.</h2>`;
+        document.getElementById("tryagain-audio").play(); // Play try again audio
     }
 
     resultContainer.classList.remove("hidden");
@@ -120,9 +120,31 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <button id="restart-btn">Play Again</button>`;
 
     document
-      .getElementById("restart-btn")
-      .addEventListener("click", restartQuiz);
-  }
+        .getElementById("restart-btn")
+        .addEventListener("click", restartQuiz);
+}
+
+  // function showResult() {
+  //   quizContainer.classList.add("hidden");
+
+  //   let resultMessage = "";
+
+  //   if (score === questions[currentCategory].length) {
+  //     resultMessage = "<h2 class='win-message'>You Win! Perfect Score!</h2>";
+  //     audio.play();
+  //   } else {
+  //     resultMessage = `<h2 class='lose-message'>You Lost! Try Again.</h2>`;
+  //   }
+
+  //   resultContainer.classList.remove("hidden");
+  //   resultContainer.innerHTML = `${resultMessage} 
+  //                                   <p>Your Score: ${score}/${questions[currentCategory].length}</p>
+  //                                   <button id="restart-btn">Play Again</button>`;
+
+  //   document
+  //     .getElementById("restart-btn")
+  //     .addEventListener("click", restartQuiz);
+  // }
 
   function restartQuiz() {
     resultContainer.classList.add("hidden");
