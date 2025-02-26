@@ -67,14 +67,12 @@ button:focus {
 .lose-message {
     color: red;
 }
+
 #quiz-image {
     display: block;
     margin: 20px auto;
-    max-width: 100px;
-    width: 200px !important;
-    height: auto !important;
-    border: 2px solid red;
-
+    width: 220px;
+    height: auto;
 }
 
 @keyframes slideIn {
